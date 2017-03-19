@@ -14,9 +14,13 @@
 		9745B10C1E7CCE960064508D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9745B10A1E7CCE960064508D /* LaunchScreen.storyboard */; };
 		9745B1161E7DC0550064508D /* CategoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9745B1151E7DC0550064508D /* CategoriesTableViewController.swift */; };
 		9745B1181E7DC0FA0064508D /* CategoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9745B1171E7DC0FA0064508D /* CategoriesTableViewCell.swift */; };
+		97D7321D1E7DCEC50022E1CE /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D7321C1E7DCEC50022E1CE /* File.swift */; };
+		A3AD3B196EA3C7DDA2AB9206 /* Pods_HCPmsDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61C32163E1B7B597F7FF59C1 /* Pods_HCPmsDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		525130A480E53B6850BB2683 /* Pods-HCPmsDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HCPmsDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-HCPmsDemo/Pods-HCPmsDemo.release.xcconfig"; sourceTree = "<group>"; };
+		61C32163E1B7B597F7FF59C1 /* Pods_HCPmsDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HCPmsDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9745B0FE1E7CCE960064508D /* HCPmsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HCPmsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9745B1011E7CCE960064508D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9745B1031E7CCE960064508D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +30,8 @@
 		9745B10D1E7CCE960064508D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9745B1151E7DC0550064508D /* CategoriesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesTableViewController.swift; sourceTree = "<group>"; };
 		9745B1171E7DC0FA0064508D /* CategoriesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesTableViewCell.swift; sourceTree = "<group>"; };
+		97D7321C1E7DCEC50022E1CE /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		CD29474BF9ACA1C1C7212BA1 /* Pods-HCPmsDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HCPmsDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HCPmsDemo/Pods-HCPmsDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +39,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3AD3B196EA3C7DDA2AB9206 /* Pods_HCPmsDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		70FF3ABF19C9C0E26F261903 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61C32163E1B7B597F7FF59C1 /* Pods_HCPmsDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9745B0F51E7CCE960064508D = {
 			isa = PBXGroup;
 			children = (
 				9745B1001E7CCE960064508D /* HCPmsDemo */,
 				9745B0FF1E7CCE960064508D /* Products */,
+				E1B4BB6FFF5848541E2623E5 /* Pods */,
+				70FF3ABF19C9C0E26F261903 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,11 +80,21 @@
 				9745B1051E7CCE960064508D /* Main.storyboard */,
 				9745B1171E7DC0FA0064508D /* CategoriesTableViewCell.swift */,
 				9745B1151E7DC0550064508D /* CategoriesTableViewController.swift */,
+				97D7321C1E7DCEC50022E1CE /* File.swift */,
 				9745B1081E7CCE960064508D /* Assets.xcassets */,
 				9745B10A1E7CCE960064508D /* LaunchScreen.storyboard */,
 				9745B10D1E7CCE960064508D /* Info.plist */,
 			);
 			path = HCPmsDemo;
+			sourceTree = "<group>";
+		};
+		E1B4BB6FFF5848541E2623E5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CD29474BF9ACA1C1C7212BA1 /* Pods-HCPmsDemo.debug.xcconfig */,
+				525130A480E53B6850BB2683 /* Pods-HCPmsDemo.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +104,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9745B1101E7CCE960064508D /* Build configuration list for PBXNativeTarget "HCPmsDemo" */;
 			buildPhases = (
+				8F9C22D6C87C73268629989F /* [CP] Check Pods Manifest.lock */,
 				9745B0FA1E7CCE960064508D /* Sources */,
 				9745B0FB1E7CCE960064508D /* Frameworks */,
 				9745B0FC1E7CCE960064508D /* Resources */,
+				CCB61E75C5EFDF73C7BD8FC8 /* [CP] Embed Pods Frameworks */,
+				027298FCA7003A64C15A67EA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -137,11 +167,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		027298FCA7003A64C15A67EA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HCPmsDemo/Pods-HCPmsDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F9C22D6C87C73268629989F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CCB61E75C5EFDF73C7BD8FC8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HCPmsDemo/Pods-HCPmsDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9745B0FA1E7CCE960064508D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97D7321D1E7DCEC50022E1CE /* File.swift in Sources */,
 				9745B1041E7CCE960064508D /* ViewController.swift in Sources */,
 				9745B1181E7DC0FA0064508D /* CategoriesTableViewCell.swift in Sources */,
 				9745B1021E7CCE960064508D /* AppDelegate.swift in Sources */,
@@ -266,6 +345,7 @@
 		};
 		9745B1111E7CCE960064508D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD29474BF9ACA1C1C7212BA1 /* Pods-HCPmsDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HCPmsDemo/Info.plist;
@@ -278,6 +358,7 @@
 		};
 		9745B1121E7CCE960064508D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 525130A480E53B6850BB2683 /* Pods-HCPmsDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HCPmsDemo/Info.plist;
@@ -307,6 +388,7 @@
 				9745B1121E7CCE960064508D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
