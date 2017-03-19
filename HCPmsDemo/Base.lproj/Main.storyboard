@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Categories Table View Controller-->
+        <!--Categories-->
         <scene sceneID="56e-AL-QtQ">
             <objects>
                 <tableViewController id="fvS-Q5-NHg" customClass="CategoriesTableViewController" customModule="HCPmsDemo" customModuleProvider="target" sceneMemberID="viewController">
@@ -35,15 +35,15 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l6U-Iq-7xt">
-                                            <rect key="frame" x="8" y="47" width="350" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l6U-Iq-7xt">
+                                            <rect key="frame" x="8" y="47" width="340" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="l6U-Iq-7xt" secondAttribute="trailing" constant="350" id="6AG-Px-7Me"/>
+                                        <constraint firstAttribute="trailing" secondItem="l6U-Iq-7xt" secondAttribute="trailing" constant="27" id="6AG-Px-7Me"/>
                                         <constraint firstItem="gYC-jG-HDS" firstAttribute="top" secondItem="2NJ-vv-WUj" secondAttribute="top" constant="10" id="77j-cM-ZOl"/>
                                         <constraint firstItem="gYC-jG-HDS" firstAttribute="leading" secondItem="2NJ-vv-WUj" secondAttribute="leadingMargin" id="7J4-Q5-D2z"/>
                                         <constraint firstItem="l6U-Iq-7xt" firstAttribute="leading" secondItem="2NJ-vv-WUj" secondAttribute="leadingMargin" id="paO-7x-w2d"/>
@@ -61,20 +61,23 @@
                             <outlet property="delegate" destination="fvS-Q5-NHg" id="ojb-6n-EU5"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="trR-5q-22n"/>
+                    <navigationItem key="navigationItem" title="Categories" id="trR-5q-22n"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wFZ-eK-lpU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1103.2" y="-121.88905547226388"/>
+            <point key="canvasLocation" x="921" y="-122"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Categories-->
         <scene sceneID="zkB-QL-F9Z">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="o60-hu-giY" sceneMemberID="viewController">
+                <navigationController title="Categories" automaticallyAdjustsScrollViewInsets="NO" id="o60-hu-giY" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="r05-Dt-B7m">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" id="r05-Dt-B7m">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -83,7 +86,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PF2-m3-ilL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="164" y="-121.88905547226388"/>
+            <point key="canvasLocation" x="284" y="-122"/>
         </scene>
     </scenes>
 </document>
